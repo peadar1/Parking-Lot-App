@@ -1,18 +1,15 @@
-## Getting Started
+## Parking Lot (Java)
+A simple, in-memory parking lot system written in Java.
+It models a multi-floor car park where each floor has 1 truck slot, 2 bike slots, and the remaining slots are for cars.
+You can park/unpark vehicles and query the number of free slots by type.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Features
+Create a parking lot with N floors and M slots per floor
 
-## Folder Structure
+Reserve the first 3 slots per floor as: [truck, bike, bike], rest as car
 
-The workspace contains two folders by default, where:
+Park a vehicle by type and receive a ticket ID: PARKING_LOT_ID_floor_slot
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Unpark a vehicle using the ticket ID
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Query number of empty slots by vehicle type
